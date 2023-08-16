@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1 style="color: #129f1d;">SORVETERIA BOLNOSARO</h1>
+<h2 style="color: yellow;">escolha o sabor</h2>
+<div class="Primeiroreal">
+  <div class="primeiro">
+    <form action="/action_page.php">
+      <label for="Sabor"></label>
+      <select id="Sabor" name="Sabor" size="4">
+        <option value="Uva">Uva</option>
+        <option value="morango">Morango</option>
+        <option value="flocos">Flocos</option>
+        <option value="Pilambeta">Pilambeta</option>
+      </select>
+      <br><br>
+      <input type="button" onclick="passar()" value=">>" class="botao" id="botaoerrado">
+    </form>
+  </div>
+</div>
+<div class="barra1">
+  <div class="Escolha">
+    <label for="SaborSelecionado">Sabores selecionados:</label>
+    <select id="SaborSelecionado" name="SaborSelecionado" size="3" multiple></select>
+    <input type="button" onclick="Remover()" value="<<" class="botao">
+    <input disabled id="ValorDaCompra" value="0.00">
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
